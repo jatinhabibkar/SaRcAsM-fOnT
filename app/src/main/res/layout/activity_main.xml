@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/sarcasm_font"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screenText"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/roundcorner"
+        android:ems="10"
+        android:maxLines="10"
+        android:hint="your sarcasm"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="change text"
+        android:id="@+id/buttonhai"
+        android:onClick="submitText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonhai"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="copy to clipboard"
+        android:id="@+id/buttoncopy"
+        android:onClick="copytoclipboard"/>
+
+
+</RelativeLayout>
