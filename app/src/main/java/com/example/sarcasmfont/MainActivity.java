@@ -74,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
 
             toast.show();
         }
+        else if(thetext.toString()==""){
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "first enter your SaRcAsM",
+                    Toast.LENGTH_SHORT);
+
+            toast.show();
+        }
         else{
             ClipboardManager clipboard=(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
             ClipData clip =ClipData.newPlainText("SarcasmText",newtext);

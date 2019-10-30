@@ -27,11 +27,12 @@
         android:ems="10"
         android:maxLines="10"
         android:hint="your sarcasm"
-        android:textAlignment="center"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
+        android:cursorVisible="true"
+        android:padding="5dp"
 
         />
 
